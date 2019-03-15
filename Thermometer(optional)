@@ -1,0 +1,41 @@
+int tempPin = A0;
+int LED1 = 2;
+int LED2 = 3;
+int LED3 = 4;
+int LED4 = 5;
+int LED5 = 6;
+
+void setup()
+{
+  //TODO: use pinMode to initialize all pins as input
+}
+
+void loop()
+{
+
+  if(readTemp() > 0 && readTemp() < 25){
+  //TODO: Turn on LED1 and Turn off the rest.
+  }
+  else if(readTemp() > 25 && readTemp() < 50){
+  //TODO: Turn on LED1,LED2 and Turn off the rest.
+  }
+
+  else if(readTemp() > 50 && readTemp() < 75){
+  //TODO: Turn on LED1,2,3 and Turn off the rest
+  }
+  else if(readTemp() > 75 && readTemp() < 100){
+  //TODO: Turn on LED1,2,3,4 and Turn off the rest
+  }
+  else if(readTemp() > 100 && readTemp() < 125){
+  //TODO: Turn on LED1,2,3,4,5 and Turn off the rest
+  }
+  else{
+  //TODO: Turn off all LEDs
+  }
+}
+
+/*
+* Create a fuction called readTemp that returns an integer value
+* The function must read sensor data and map the data to an appropriate range.
+* Then return interger value called temperature.
+*/
