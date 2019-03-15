@@ -1,0 +1,13 @@
+int tempPin = A0;
+
+void setup()
+{
+  pinMode(tempPin,INPUT);
+  Serial.begin(9600);
+}
+
+void loop()
+{
+  int readTemp = analogRead(A0);
+  Serial.println(readTemp);
+}
